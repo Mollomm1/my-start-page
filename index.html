@@ -2,17 +2,23 @@
 <html>
   <head>
     <title>Start Page</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="flex flex-col relative min-h-screen justify-center overflow-hidden bg-gray-900 py-2">
-      <div class="flex-1 w-auto m-5 h-full text-white bg-gray-800 rounded-xl p-1.5 opacity-80 backdrop-blur-lg">
+    <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-900 py-2">
+      <div class="m-5 h-full w-auto flex-1 rounded-xl bg-gray-800 p-1.5 text-white opacity-80 backdrop-blur-lg">
         <!-- Clock !-->
-        <h1 class="font-black text-5xl text-center">00:00</h1>
-<h1 class="font-semibold text-gray-300 text-1xl text-center">4 mai 2023</h1>
+        <h1 class="text-center text-5xl font-black">00:00</h1>
+        <h1 class="text-1xl text-center font-semibold text-gray-300">4 mai 2023</h1>
+        <form action="https://www.google.com/search" method="get" class="relative mx-auto mt-6 w-max">
+          <input type="search" name="q" class="relative peer z-10 h-12 w-full cursor-pointer cursor-text rounded-full border bg-transparent pl-12 pl-16 pr-4 outline-none focus:border-green-500" />
+          <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5 peer-focus:border-green-500 peer-focus:stroke-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </form>
       </div>
       <!-- navbar !-->
-      <nav class="flex relative left-0 right-0 ml-auto mr-auto w-max rounded-xl bg-gray-800 p-2 text-white">
+      <nav class="relative left-0 right-0 ml-auto mr-auto flex w-max rounded-xl bg-gray-800 p-2 text-white">
         <a href="#">
           <button class="rounded-lg bg-gray-800 p-1.5 transition-colors duration-300 hover:bg-gray-700 focus:bg-gray-700">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="32px" height="32px" fill="white">
